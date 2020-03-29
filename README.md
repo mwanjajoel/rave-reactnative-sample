@@ -30,6 +30,14 @@ This is a custom react native SDK made by [Mwanja Joel](https://twitter.com/mrjo
 - [React Native](https://facebook.github.io/react-native/docs/getting-started.html)
 
 
+This is a sample app created using react native cli. Simply run the following commands to install and run 
+
+` npm install ` or  `yarn install `
+
+` react-native run-ios` or `react-native run-android` 
+
+
+
 ## Installations
 
 > To use rave react native SDK in your application, you need to have `Node` and `npm` downloaded and installed on your machine.
