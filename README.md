@@ -90,10 +90,6 @@ You can pull in react-native-ravepay into app with the steps below:
   ### OR
   > yarn add react-native-ravepay
 
-<p align="center">
-  <img src="https://res.cloudinary.com/flutterwavedeveloper/image/upload/v1540752764/rave-react-native/npm-install-rave.png" style="max-height: 150;" alt="npm-install-rave image">
-<p>
-
   `Note:` To use `Yarn` on your machine [Click Here](https://yarnpkg.com/en/docs/install)
 
   Next use any of the payment options by following the processes  [below](#payment-options).
