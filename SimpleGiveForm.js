@@ -16,7 +16,7 @@ class SimpleGivingForm extends Component {
     var value = this.refs.givingForm.getValue();
     if (value) {
       // if validation fails, value will be null
-    //   Alert.alert('Validation successful');
+      // Alert.alert('Validation successful');
     } else {
       Alert.alert('Please fix the errors');
     }
