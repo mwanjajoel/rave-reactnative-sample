@@ -11,6 +11,8 @@ import {SafeAreaView, StyleSheet, ScrollView, StatusBar} from 'react-native';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 import Giving from './Giving';
+import GivingForm from './GivingForm';
+import SimpleGiveForm from './SimpleGiveForm';
 
 const App: () => React$Node = () => {
   return (
@@ -20,7 +22,7 @@ const App: () => React$Node = () => {
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
-          <Giving />
+          <SimpleGiveForm />
         </ScrollView>
       </SafeAreaView>
     </>
