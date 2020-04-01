@@ -88,9 +88,6 @@ export default class App extends React.Component {
                   // this.emailInput.focus();
                 }}
               />
-
-              
-
               <ErrorMessage name="invalid" />
               <Button
                 onPress={props.handleSubmit}

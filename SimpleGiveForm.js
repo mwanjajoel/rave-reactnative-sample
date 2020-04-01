@@ -12,11 +12,12 @@ class SimpleGivingForm extends Component {
     this.submitForm = this.submitForm.bind(this);
   }
 
+  // function for submitting the form details
   submitForm() {
     var value = this.refs.givingForm.getValue();
     if (value) {
-      // if validation fails, value will be null
-      // Alert.alert('Validation successful');
+      // send the values to the flutterwave screen as props
+      //   Alert.a(value);
     } else {
       Alert.alert('Please fix the errors');
     }
@@ -51,9 +52,16 @@ class SimpleGivingForm extends Component {
           Offertory: 'Offertory',
           Tithe: 'Tithe',
           FirstFruit: 'First Fruit',
-          LoveOffering: 'Love Offering',
-          Partnership: 'Partnership',
-          GeneralMinistry: 'General Ministry',
+          loveOfferingSeedOfFaith: 'Love Offering(Seed of Faith)',
+          loveOfferingThanksGiving: 'Love Offering(ThanksGiving)',
+          PartnershipGeneral: 'Partnership(General)',
+          PartnershipPPM: 'Partnership(PPM(Building))',
+          GeneralMinistryRadio: 'General Ministry(Radio)',
+          GeneralMinistryTV: 'General Ministry(TV)',
+          GeneralMinistryPrisons: 'General Ministry(Prisons)',
+          GeneralMinistryAnniversary: 'General Ministry(Anniversary)',
+          GeneralMinistryCrossOver: 'General Ministry(CrossOver)',
+          GeneralMinistryMissions: 'General Ministry(Missions)',
           Manifests: 'Manifests',
           Diaspora: 'Diaspora',
         },
@@ -61,9 +69,17 @@ class SimpleGivingForm extends Component {
       ),
     });
 
+    var options = {
+      fields: {
+        paymentReason: {
+          isCollapsed: true,
+        },
+      },
+    };
+
     return (
       <View>
-        <Form ref="givingForm" type={GivingModel} />
+        <Form ref="givingForm" type={GivingModel} options={options} />
         <TouchableOpacity style={styles.button} onPress={this.submitForm}>
           <Text style={styles.buttonText}>Submit</Text>
         </TouchableOpacity>
