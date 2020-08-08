@@ -2,6 +2,7 @@
 import React, {Component} from 'react';
 import {View, Alert, TouchableOpacity, Text, StyleSheet} from 'react-native';
 import t from 'tcomb-form-native';
+import Giving from './Giving';
 
 let Form = t.form.Form;
 
@@ -17,7 +18,8 @@ class SimpleGivingForm extends Component {
     var value = this.refs.givingForm.getValue();
     if (value) {
       // send the values to the flutterwave screen as props
-      //   Alert.a(value);
+      // Alert.alert(value);
+      <Giving />;
     } else {
       Alert.alert('Please fix the errors');
     }
@@ -81,7 +83,7 @@ class SimpleGivingForm extends Component {
       <View>
         <Form ref="givingForm" type={GivingModel} options={options} />
         <TouchableOpacity style={styles.button} onPress={this.submitForm}>
-          <Text style={styles.buttonText}>Submit</Text>
+          <Text style={styles.buttonText}>Continue</Text>
         </TouchableOpacity>
       </View>
     );

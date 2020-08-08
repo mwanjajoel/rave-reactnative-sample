@@ -13,6 +13,7 @@ import {Colors} from 'react-native/Libraries/NewAppScreen';
 import Giving from './Giving';
 import GivingForm from './GivingForm';
 import SimpleGiveForm from './SimpleGiveForm';
+import GivingWrapper from './GivingWrapper';
 
 const App: () => React$Node = () => {
   return (
@@ -22,7 +23,7 @@ const App: () => React$Node = () => {
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
-          <SimpleGiveForm />
+          <GivingWrapper />
         </ScrollView>
       </SafeAreaView>
     </>
